@@ -1,4 +1,3 @@
-
 import re
 from openai import OpenAI
 from groq import Groq
@@ -16,18 +15,14 @@ class BenchmarkRunner:
         return text.strip()
 
     def get_summary_gpt(self, input_text, model="gpt-3.5-turbo"):
-        if not self.openai_client: return "Skipped"
+        if not self.openai_client:
+            return "Skipped"
         prompt = (
-            "Here are some news articles:
-" + input_text + "
-
-"
+            "Here are some news articles:\n" + input_text + "\n\n"
             "Please write a detailed and comprehensive summary of the provided articles. "
-            "The summary should cover all key points and relevant details.
-
-"
+            "The summary should cover all key points and relevant details.\n\n"
             "Write your summary in <summary> XML tags."
-        )
+         )
 
         try:
             response = self.openai_client.chat.completions.create(
@@ -44,18 +39,14 @@ class BenchmarkRunner:
             return ""
 
     def get_summary_groq(self, input_text, model="llama-3.1-8b-instant"):
-        if not self.groq_client: return "Skipped"
+        if not self.groq_client:
+            return "Skipped"
         prompt = (
-            "Here are some news articles:
-" + input_text + "
-
-"
+            "Here are some news articles:\n" + input_text + "\n\n"
             "Please write a detailed and comprehensive summary of the provided articles. "
-            "The summary should cover all key points and relevant details.
-
-"
+            "The summary should cover all key points and relevant details.\n\n"
             "Write your summary in <summary> XML tags."
-        )
+         )
 
         try:
             chat_completion = self.groq_client.chat.completions.create(
