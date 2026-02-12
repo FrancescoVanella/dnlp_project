@@ -105,7 +105,6 @@ def main():
         print(df_phrase)
 
     # --- FULL TEXT ---
-    # Always run full text baseline unless explicitly disabled (feature for future?)
     print("\n--- FULL TEXT ---")
     full_text_results = run_full_text_benchmark(test_docs, models, runner, bert_scorer=bert_scorer)
     df_full = pd.DataFrame(full_text_results).T
