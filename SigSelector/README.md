@@ -6,8 +6,8 @@ SigSelector is a framework designed for efficient multi-document summarization. 
 ## Features
 
 - **Document Selection**: Implements Top-k selection strategies based on extractive importance scores.
-- **Models**: **GPT-3.5** (OpenAI) and **Llama 3.1** (Groq) are used for testing.
 - **Benchmarking**: Pipeline to compare Full Text vs. Selected Text strategies.
+- **Two LLM models**: Compatible with the API models GPT-3.5 (OpenAI) and Llama 3.1 (Groq).
 - **Metrics**: Results are based on **ROUGE** and **BERTScore**.
 
 ## Repository Structure
