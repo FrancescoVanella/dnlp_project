@@ -1,6 +1,6 @@
-# SigCompressor: Efficient LLM Summarization via Extractive Compression
+# SigCompressor
 
-In the folder SigCompressor there is our implementation of a framework for benchmarking the impact of extractive text compression LLM summarization. By using signals extracted by SigExt from the text, this tool identifies key sentences and phrases to significantly reduce input token count in the prompt, while maintaining summary quality.
+SigCompressor is a framework for benchmarking the impact of extractive text compression LLM summarization. By using signals extracted by SigExt from the text, this tool identifies key sentences and phrases to significantly reduce input token count in the prompt, while maintaining summary quality.
 
 ## Key Features
 *   **Token Efficiency**: Reduce prompt size by 60-80% to lower API costs and latency.
