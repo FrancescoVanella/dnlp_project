@@ -50,6 +50,6 @@ class DocumentSelector:
         scored_docs = self.score_documents(data)
         scored_docs.sort(key=lambda x: x['score'], reverse=True)
         selected = scored_docs[:k]
-        final_text = "
-".join([d['text'].strip() for d in selected])
+        final_text = "\n".join([d['text'].strip() for d in selected])
+        
         return final_text, scored_docs
