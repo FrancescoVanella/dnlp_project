@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# Dataset folders
+cnn_dataset/
+cnn_extractor_model/
+cnn_dataset_with_keyphrase/
+results/
+SigExt_repo/
