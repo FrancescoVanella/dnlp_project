@@ -5,7 +5,6 @@ This repository contains two extensions for the DNLP project. Each subdirectory 
 ## Modules
 
 ### 1. [SigCompressor](./SigCompressor)
-**Efficient LLM Summarization via Extractive Compression**
 A framework that uses the SigExt model to compress text prompts (sentence or phrase level) before feeding them to LLMs like GPT or Mistral, with the aim of reducing the number of tokens in the prompt while maintaining summary quality.
 
 
