@@ -24,7 +24,7 @@ def check_nltk_resources():
         print(f"Warning: NLTK download failed: {e}")
 
 def main():
-    # --- CLI Arguments ---
+
     parser = argparse.ArgumentParser(description="SigSelector Benchmark")
     parser.add_argument("--strategies", nargs="+", default=["all"], 
                         help="Strategies to run. Options: '1', '2' (integers for Top-K), 'full' (Full Text), or 'all' (runs 1, 2, and full).")
@@ -169,8 +169,7 @@ def main():
     df_metrics = pd.DataFrame(metrics_list)
     df_metrics.to_csv("final_benchmark_metrics.csv", index=False)
     
-    print("
-=== Final Metrics ===")
+    print("=== Final Metrics ===")
     print(df_metrics.round(2).to_string(index=False))
 
 if __name__ == "__main__":
