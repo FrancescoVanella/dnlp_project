@@ -1,14 +1,17 @@
 # SigCompressor
 
-SigCompressor is a framework for benchmarking the impact of extractive text compression LLM summarization. By using signals extracted by SigExt from the text, this tool identifies key sentences and phrases to significantly reduce input token count in the prompt, while maintaining summary quality.
+SigCompressor is a framework for benchmarking the impact of extractive text compression on LLM summarization. By using signals extracted by SigExt from the text, this tool identifies key sentences and key phrases to significantly reduce input token count in the prompt, while maintaining summary quality.
 
-## Key Features
+## Author
+Francesco Vanella
+
+## Features
 *   **Token Efficiency**: Reduce prompt size by 60-80% to lower API costs and latency.
-*   **Dual Strategies**: Support for both sentence-level (extracting full keysentences) and phrase-level (extracting keyphrases) compression.
-*   **Two LLM models**: Compatible with the local model Mistral and the API model GPT-3.5.
-*   **Metrics**: Evaluates performance using ROUGE, BLEU, and BERTScore.
+*   **Dual Strategies**: Support for both sentence-level (extracting keysentences) and phrase-level (extracting keyphrases) compression.
+*   **Two LLM models**: Compatible with the local model Mistral 7B and the API model GPT-3.5.
+*   **Metrics**: Evaluates performance using ROUGE, BERTScore and BLEU.
 
-## Project Structure
+## Repository Structure
 *   `src/`: Core modules for compression, benchmarking, and metrics.
 *   `prepare_sigext.py`: Automates the setup of the SigExt extractor and dataset preparation.
 *   `main.py`: The main experiment runner.
@@ -17,8 +20,8 @@ SigCompressor is a framework for benchmarking the impact of extractive text comp
 ## Installation
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/YOUR_USERNAME/SigCompressor.git
-    cd SigCompressor
+    git clone https://github.com/FrancescoVanella/dnlp_project.git
+    cd dnlp_project/SigCompressor
     ```
 2.  **Install dependencies**:
     ```bash
@@ -67,4 +70,7 @@ Results are saved in the `results/` directory:
 *   `metrics_comparison.png`: Visualization of the trade-offs.
 
 ## Credits
-This project utilizes the **SigExt** model. Please refer to the [original repository](https://github.com/amazon-science/SigExt) for details.
+This project utilizes the SigExt model. Please refer to the [original repository](https://github.com/amazon-science/SigExt) for details.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for details.
