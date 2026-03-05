@@ -9,7 +9,7 @@ Francesco Vanella
 *   **Token Efficiency**: Reduce prompt size by 60-80% to lower API costs and latency.
 *   **Dual Strategies**: Support for both sentence-level (extracting keysentences) and phrase-level (extracting keyphrases) compression.
 *   **Two LLM models**: Compatible with the local model Mistral 7B and the API model GPT-3.5.
-*   **Metrics**: Evaluates performance using ROUGE, BERTScore and BLEU.
+*   **Metrics**: Evaluates performance using ROUGE and BERTScore.
 
 ## Repository Structure
 *   `src/`: Core modules for compression, benchmarking, and metrics.

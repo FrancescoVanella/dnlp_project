@@ -1,6 +1,6 @@
 # DNLP project
 
-This repository contains two extensions for the DNLP project. Each subdirectory contains a self-contained module with its own documentation and source code.
+This repository contains two extensions for the Deep Natural Language Processing (DNLP) project. Each subdirectory contains a self-contained module with its own documentation and source code.
 
 ## Author
 Francesco Vanella
