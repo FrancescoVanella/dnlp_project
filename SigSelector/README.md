@@ -4,7 +4,7 @@
 SigSelector is a framework designed for efficient multi-document summarization. It uses the SigExt algorithm to evaluate and select the most relevant source documents from a cluster, significantly reducing the dimension of the prompt required for LLMs.
 
 ## Author
-Francesco Vanella
+Francesco Vanella · Hasti Azadnia · Ayda Ghasemazar · Sara Asadi Khomami
 
 ## Features
 

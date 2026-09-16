@@ -3,7 +3,7 @@
 SigCompressor is a framework for benchmarking the impact of extractive text compression on LLM summarization. By using signals extracted by SigExt from the text, this tool identifies key sentences and key phrases to significantly reduce input token count in the prompt, while maintaining summary quality.
 
 ## Author
-Francesco Vanella
+Francesco Vanella · Hasti Azadnia · Ayda Ghasemazar · Sara Asadi Khomami
 
 ## Features
 *   **Token Efficiency**: Reduce prompt size by 60-80% to lower API costs and latency.
